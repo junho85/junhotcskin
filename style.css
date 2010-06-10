@@ -82,14 +82,38 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	font-size: 1.2em;
 }
 
+#headbar .blogTitle     {
+	padding-top:/*@title-height:-35=padding-top:*/ 25px /*@*/;
+	padding-bottom:25px;
+	padding-left:2px;
+	font-size:30px;
+	border:0px solid #333333;
+}
+
+#headbar .blogTitle  a  {
+	color:/*@title-color=*/ #000000 /*@*/;
+	font:/*@title-font-size=1.0em*/ 1.0em /*@*/ /*@title-font-family=*/ tahoma,dotum /*@*/;
+	font-weight:bold; float:left; 
+	padding-bottom:3px;
+	border-bottom:2px dotted #c45050;
+}
+
 #headbar .logo {
 	position: relative;
 	left:10px;
-	top:0px; font-size: 1.3em;
+	top:0px;
+	font: "Malgun Gothic bold","맑은 고딕 bold";
+	font-size: 1.3em;
+	font-weight: bold;
 	margin:0 8pt;
 	padding:8px 0 5px 9px;
 	display:block;
 	height: 22px;
+}
+
+#headbar .logo a {
+	font: "Malgun Gothic bold","맑은 고딕 bold";
+	color:#ffffff;
 }
 
 #headbar .sites {
@@ -150,21 +174,7 @@ body#tt-body-guestbook #headbar .blogMenu li.tab_guest a	 	{ color:#c45050;}
 }
 
 #header .header_wrap   { }
-#header .blogTitle     {
-	padding-top:/*@title-height:-35=padding-top:*/ 25px /*@*/;
-	padding-bottom:25px;
-	padding-left:2px;
-	font-size:30px;
-	border:0px solid #333333;
-}
 
-#header .blogTitle  a  {
-	color:/*@title-color=*/ #000000 /*@*/;
-	font:/*@title-font-size=1.0em*/ 1.0em /*@*/ /*@title-font-family=*/ tahoma,dotum /*@*/;
-	font-weight:bold; float:left; 
-	padding-bottom:3px;
-	border-bottom:2px dotted #c45050;
-}
 
 #header li.tab_blog    { background:none;  }
 #header li.tab_blog a  { font-weight:bold; }
@@ -177,7 +187,7 @@ body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; 
 
 
 #container {		
-	width:/*@post-width:200=*/ 1180px/*970px*/ /*@*/;
+	width:/*@post-width:200=*/ 1190px/*970px*/ /*@*/;
 	border:0px solid #777777;
 	margin:0px auto; 
 	padding:0px;  		
@@ -187,38 +197,17 @@ body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; 
 	display:block; 
 	float:left;
 	width:/*@post-width=*/ 770px /*@*/;
-	overflow:hidden;		
+	border:1px solid #C1C1C1;
+	background-color: white;
+
+	overflow:hidden;
 }
 
 
 
 
 /* ***** ROUND BOX *** */
-.rtop, .rbottom{display:block; } 
-.rtop * {display:block; height:1px; overflow:hidden; background: #EEEEEE}  
-.rbottom *{ margin-bottom:10px; display:block; height:1px; overflow:hidden; background: #ffffff; } 
 
-.htop, .hbottom{display:block; } 
-.htop * {display:block; height:1px; overflow:hidden; background: #ffffff}  
-.hbottom *{ margin-bottom:10px; display:block; height:1px; overflow:hidden; background: #ffffff; } 
-
-.ntop, .nbottom{display:block; } 
-.ntop * {display:block; height:1px; overflow:hidden; background: #f9f9f9}  
-.nbottom *{ margin-bottom:10px; display:block; height:1px; overflow:hidden; background: #f9f9f9; } 
-
-.r1{margin:0 5px; background:#999999} 
-.r2{margin:0 3px; border-left:2px solid #999999; border-right:2px solid #999999;} 
-.r3{margin:0 2px; border-left:1px solid #999999; border-right:1px solid #999999;} 
-.r4{margin:0 1px; height:2px; border-left:1px solid #999999; border-right:1px solid #999999;} 
-
-.ftop, .fbottom{display:block; } 
-.ftop * {display:block; height:1px; overflow:hidden; }  
-.fbottom *{ margin-bottom:10px; display:block; height:1px; overflow:hidden; } 
-
-.f1{margin:0 5px; background:#BBBBBB} 
-.f2{margin:0 3px; border-left:2px solid #BBBBBB; border-right:2px solid #BBBBBB;} 
-.f3{margin:0 2px; border-left:1px solid #BBBBBB; border-right:1px solid #BBBBBB;} 
-.f4{margin:0 1px; height:2px; border-left:1px solid #BBBBBB; border-right:1px solid #BBBBBB;} 
 .box_hblank1 { padding:5px; }
 .box_hblank2 { padding:10px; }
 
@@ -239,7 +228,10 @@ body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; 
 #content .guestbook, 
 #content .searchList, 
 #content .searchRplist,
-#content .entry { padding:18px 18px 0px 18px;  border-left:1px solid #999999; border-right:1px solid #999999; background:url("images/bg_entry_top.jpg") repeat-x 0px 0px; background-color:#ffffff;  }
+#content .entry { padding:18px 18px 0px 18px;
+/*	border-left:1px solid #999999;
+	border-right:1px solid #999999;*/
+	background:url("images/bg_entry_top.jpg") repeat-x 0px 0px; background-color:#ffffff;  }
 
 #content .prologue h3,
 #content .notice h3,
@@ -414,7 +406,6 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 	overflow:hidden;	
 }
 
-#sidebarL                       { }
 #sidebarL .side_item	{
 	padding:/*10px 10px 10px 10px*/0px;  border-left:/*1*/0px solid #999999;
 	border-right:/*1*/0px solid #999999;
@@ -428,7 +419,13 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
          
 #sidebarL ul                    { list-style:none;}
 #sidebarL li                    { padding-left:0px;}
-#sidebarL h3                    { cursor:pointer; font-family:tahoma,dotum; font-size:11px;  font-weight:bold; color:#C45050; background:url(images/line_dot_gray.gif) 0px 22px repeat-x; margin-bottom:10px;}
+#sidebarL h3  {
+	cursor:pointer; font-family:Malgun Gothic,맑은 고딕, tahoma,dotum; font-size:1.5em;
+	font-weight:bold; color:#C45050;
+	background:url(images/line_dot_gray.gif) 0px 22px repeat-x;
+	border-bottom:1px solid #EEEEEE;
+	margin-bottom:10px;
+}
 #sidebarL .item_title            { font-family:tahoma,dotum; font-size:11px;  font-weight:bold; color:#C45050; margin-bottom:35px;}
 #sidebarL .cnt                  { font:0.85em Tahoma, Helvetica, Arial, Gulim, sans-serif;  color:#f60;}
 #sidebarL .date                 { font:10px Tahoma;  color:#888;}
@@ -525,7 +522,7 @@ a.cal_click:hover {	color : #fff;	 text-align:center;}
 	overflow:hidden;	
 }
 
-#sidebarR                       { }
+/*#sidebarR  { }*/
 #sidebarR .side_item	{ padding:/*10px 10px 10px 1*/0px;  padding-left:8px; border-left:/*1*/0px solid #999999; border-right:/*1*/0px solid #999999;
 /*	background-color:#f9f9f9;*/
 }
@@ -537,7 +534,11 @@ a.cal_click:hover {	color : #fff;	 text-align:center;}
          
 #sidebarR ul                    { list-style:none;}
 #sidebarR li                    { padding-left:0px;}
-#sidebarR h3                    { cursor:pointer; font-family:tahoma,dotum; font-size:11px;  font-weight:bold; color:#C45050; background:url(images/line_dot_gray.gif) 0px 22px repeat-x; margin-bottom:10px;}
+#sidebarR h3 {
+	cursor:pointer; font-family:Malgun Gothic,맑은 고딕, tahoma,dotum;
+	font-size:11px;  font-weight:bold; color:#C45050;
+	background:url(images/line_dot_gray.gif) 0px 22px repeat-x; margin-bottom:10px;
+}
 #sidebarR .item_title            { font-family:tahoma,dotum; font-size:11px;  font-weight:bold; color:#C45050; margin-bottom:35px;}
 #sidebarR .cnt                  { font:0.85em Tahoma, Helvetica, Arial, Gulim, sans-serif;  color:#f60;}
 #sidebarR .date                 { font:10px Tahoma;  color:#888;}
