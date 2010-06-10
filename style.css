@@ -535,9 +535,11 @@ a.cal_click:hover {	color : #fff;	 text-align:center;}
 #sidebarR ul                    { list-style:none;}
 #sidebarR li                    { padding-left:0px;}
 #sidebarR h3 {
-	cursor:pointer; font-family:Malgun Gothic,맑은 고딕, tahoma,dotum;
-	font-size:11px;  font-weight:bold; color:#C45050;
-	background:url(images/line_dot_gray.gif) 0px 22px repeat-x; margin-bottom:10px;
+	cursor:pointer; font-family:Malgun Gothic,맑은 고딕, tahoma,dotum; font-size:1.5em;
+	font-weight:bold; color:#C45050;
+	background:url(images/line_dot_gray.gif) 0px 22px repeat-x;
+	border-bottom:1px solid #EEEEEE;
+	margin-bottom:10px;
 }
 #sidebarR .item_title            { font-family:tahoma,dotum; font-size:11px;  font-weight:bold; color:#C45050; margin-bottom:35px;}
 #sidebarR .cnt                  { font:0.85em Tahoma, Helvetica, Arial, Gulim, sans-serif;  color:#f60;}
