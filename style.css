@@ -71,6 +71,7 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	clear:both;
 }
 
+/* ***** head bar ***** */
 #headbar {
 	background-color: #3B5998;
 	height: 41px;
@@ -81,9 +82,26 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	font-size: 1.2em;
 }
 
-#my_sites {
-	position: absolute; left:550px;
-	top:2px; font-size: 0.9em;
+#headbar .logo {
+	position: relative;
+	left:10px;
+	top:0px; font-size: 1.3em;
+	margin:0 8pt;
+	padding:8px 0 5px 9px;
+	display:block;
+	height: 22px;
+}
+
+#headbar .sites {
+	float: left;
+	font-size: 0.9em;
+	margin-left: 30px;
+	color: black;
+}
+
+#header .sitesbackup {
+	position: absolute;
+	left:250px;	top:8px;
 	color: black;
 	background-color: rgba(255, 255, 255, 0.85);
 <!--[if lte IE 8]>
@@ -92,15 +110,36 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 <![endif]-->
 }
 
-#container {		
-	width:/*@post-width:200=*/ 1180px/*970px*/ /*@*/;
-	border:0px solid #777777;
-	margin:0px auto; 
-	padding:0px;  		
+#headbar .blogMenu      {
+	text-align:right; padding-right:2px;
+	background-color: #DFDFDF;
+	border-bottom:1px solid #C1C1C1;
+	display:block
 }
+
+#headbar .blogMenu ul   { margin:0;  padding-bottom:7px;  list-style:none;}
+#headbar .blogMenu li   { padding-bottom:3px; display:inline;  background:url(images/bullBar.gif) no-repeat;  margin-left:3px;  padding-left:7px;}
+#headbar .blogMenu li a { color:#000000; font:11px tahoma; }
+
+body#tt-body-blog #headbar .blogMenu li.tab_blog a ,
+body#tt-body-page #headbar .blogMenu li.tab_blog a,
+body#tt-body-category #headbar .blogMenu li.tab_blog a,
+body#tt-body-search #headbar .blogMenu li.tab_blog a,
+body#tt-body-archive #headbar .blogMenu li.tab_blog a,
+body#tt-body-entry #headbar .blogMenu li.tab_blog a,
+body#tt-body-notice #headbar .blogMenu li.tab_blog a			{ color:#c45050;}
+body#tt-body-location #headbar .blogMenu li.tab_loc a		{ color:#c45050;}
+body#tt-body-tag #headbar .blogMenu li.tab_tag a				{ color:#c45050;}
+body#tt-body-keylog #headbar .blogMenu li.tab_key a				{ color:#c45050;}
+body#tt-body-media #headbar .blogMenu li.tab_media a	 		{ color:#c45050;}
+body#tt-body-guestbook #headbar .blogMenu li.tab_guest a	 	{ color:#c45050;}
+
+
+/* ***** Header ***** */
+
 #header {		
-	margin-bottom:10px;
-	min-height:10px;
+	margin-bottom:/*1*/0px;
+	min-height:/*1*/0px;
 	border:0px solid #555555;
 	overflow:hidden;	
 	/*@title-background-color=background-color:;*/ background-color: transparent; /*@*/
@@ -109,31 +148,6 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	/*@title-background-image-repeat=background-repeat:;*/ background-repeat: no-repeat; /*@*/	
 	clear:both;
 }
-#sidebarL {
-	display:block; 
-	float:left;
-	width:190px;	
-	margin-right:10px;
-	overflow:hidden;	
-}
-
-#content {
-	display:block; 
-	float:left;
-	width:/*@post-width=*/ 770px /*@*/;
-	overflow:hidden;		
-}
-
-#sidebarR {
-	display:block; 
-	float:left;
-	width:200px;	
-	margin-left:10px;
-	overflow:hidden;	
-}
-
-
-/* ***** Header ***** */
 
 #header .header_wrap   { }
 #header .blogTitle     {
@@ -151,29 +165,33 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	padding-bottom:3px;
 	border-bottom:2px dotted #c45050;
 }
-#header .blogMenu      { text-align:right; padding-right:2px;}
 
-#header .blogMenu ul   { margin:0;  padding-bottom:7px;  list-style:none;}
-#header .blogMenu li   {  padding-bottom:3px; display:inline;  background:url(images/bullBar.gif) no-repeat;  margin-left:3px;  padding-left:7px;}
-#header .blogMenu li a { color:#000000; font:11px tahoma; }
 #header li.tab_blog    { background:none;  }
 #header li.tab_blog a  { font-weight:bold; }
 
+
+
 /* Head Background Image */
-body#tt-body-blog #header .blogMenu li.tab_blog a ,
-body#tt-body-page #header .blogMenu li.tab_blog a,
-body#tt-body-category #header .blogMenu li.tab_blog a,
-body#tt-body-search #header .blogMenu li.tab_blog a,
-body#tt-body-archive #header .blogMenu li.tab_blog a,
-body#tt-body-entry #header .blogMenu li.tab_blog a,
-body#tt-body-notice #header .blogMenu li.tab_blog a			{ color:#c45050;}
-body#tt-body-location #header .blogMenu li.tab_loc a		{ color:#c45050;}
-body#tt-body-tag #header .blogMenu li.tab_tag a				{ color:#c45050;}
-body#tt-body-keylog #header .blogMenu li.tab_key a				{ color:#c45050;}
-body#tt-body-media #header .blogMenu li.tab_media a	 		{ color:#c45050;}
-body#tt-body-guestbook #header .blogMenu li.tab_guest a	 	{ color:#c45050;}
 
 body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; padding-top:42px; text-align:center;  }
+
+
+#container {		
+	width:/*@post-width:200=*/ 1180px/*970px*/ /*@*/;
+	border:0px solid #777777;
+	margin:0px auto; 
+	padding:0px;  		
+}
+
+#content {
+	display:block; 
+	float:left;
+	width:/*@post-width=*/ 770px /*@*/;
+	overflow:hidden;		
+}
+
+
+
 
 /* ***** ROUND BOX *** */
 .rtop, .rbottom{display:block; } 
@@ -388,8 +406,20 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 
 /* ***** sidebarL ***** */
 
+#sidebarL {
+	display:block; 
+	float:left;
+	width:190px;	
+	margin-right:10px;
+	overflow:hidden;	
+}
+
 #sidebarL                       { }
-#sidebarL .side_item		       { padding:10px 10px 10px 10px;  border-left:1px solid #999999; border-right:1px solid #999999;  background-color:#f9f9f9; }
+#sidebarL .side_item	{
+	padding:/*10px 10px 10px 10px*/0px;  border-left:/*1*/0px solid #999999;
+	border-right:/*1*/0px solid #999999;
+/*	background-color:#f9f9f9;*/
+}
 
 #sidebarL a:link          { color:#333;  text-decoration:none;}
 #sidebarL a:visited       { color:#333;  text-decoration:none;}
@@ -487,8 +517,18 @@ a.cal_click:hover {	color : #fff;	 text-align:center;}
 
 /* ***** sidebarR ***** */
 
+#sidebarR {
+	display:block; 
+	float:left;
+	width:200px;	
+	margin-left:10px;
+	overflow:hidden;	
+}
+
 #sidebarR                       { }
-#sidebarR .side_item		       { padding:10px 10px 10px 10px;  padding-left:8px; border-left:1px solid #999999; border-right:1px solid #999999;  background-color:#f9f9f9; }
+#sidebarR .side_item	{ padding:/*10px 10px 10px 1*/0px;  padding-left:8px; border-left:/*1*/0px solid #999999; border-right:/*1*/0px solid #999999;
+/*	background-color:#f9f9f9;*/
+}
 
 #sidebarR a:link          { color:#333;  text-decoration:none;}
 #sidebarR a:visited       { color:#333;  text-decoration:none;}

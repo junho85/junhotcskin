@@ -57,16 +57,13 @@
 
 	<!-- div header -->
 	<div id="headbar">
-		<div style="position: relative; left:50px; top:0px; font-size: 2.3em; padding-top: 6px">
-			JunHo's Blog
-		</div>
+		<div class=logo><a href="[##_blog_link_##]">[##_title_##]</a></div>
 
-		<div id="my_sites">
-			My Sites<br />
-			<a href="http://junho85.pe.kr" target="_blank">JunHo's Laboratory</a>, 
-			<a href="http://www.facebook.com/junho85" target="_blank">Facebook</a>,
-			<a href="http://twitter.com/junho85" target="_blank">Twitter</a>,
-			<a href="http://me2day.net/junho85" target="_blank">Me2day</a>
+		<div class="sites">
+			<a href="http://junho85.pe.kr" target="_blank">JunHo's Laboratory</a> /
+			<a href="http://www.facebook.com/junho85" target="_blank">Facebook</a> /
+			<a href="http://twitter.com/junho85" target="_blank">Twitter</a> /
+			<a href="http://me2day.net/junho85" target="_blank">Me2day</a> /
 		</div>
 
 		<div style="position: absolute; left:980px; top:0px;">
@@ -82,6 +79,19 @@
 			<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=ko"></script> 
 		</div>
 
+		<div class="blogMenu">
+			<ul>
+				<!-- 블로그 사용 환경 (설치형/티스토리)에 맞게 아래 주석으로 처리된 메뉴를 활성화 시키시기 바랍니다. -->
+				<li class="tab_blog"><a href="[##_blog_link_##]">BLOG</a></li>
+				<li class="tab_tag"><a href="[##_taglog_link_##]">TAG</a></li>	
+				<li class="tab_media"><a href="[##_blog_link_##]media">MEDIA</a></li>
+				<li class="tab_loc"><a href="[##_localog_link_##]">LOCATION</a></li>
+				<!--<li class="tab_key"><a href="[##_keylog_link_##]">KEYLOG</a></li>-->
+				<li class="tab_guest"><a href="[##_guestbook_link_##]">GUESTBOOK</a></li>					
+			</ul>
+		</div>
+
+
 	</div>
 
 	<!-- div tool -->
@@ -95,31 +105,33 @@
 	<div id="container">
 		
 		<div id="header">			
-				<div class="header_wrap">
-					<div class="blogTitle"><a href="[##_blog_link_##]">[##_title_##]</a></div>
-					<div class="blogMenu">
-						<ul>
-							<!-- 블로그 사용 환경 (설치형/티스토리)에 맞게 아래 주석으로 처리된 메뉴를 활성화 시키시기 바랍니다. -->
-							<li class="tab_blog"><a href="[##_blog_link_##]">BLOG</a></li>
-							<li class="tab_tag"><a href="[##_taglog_link_##]">TAG</a></li>	
-							<li class="tab_media"><a href="[##_blog_link_##]media">MEDIA</a></li>
-							<li class="tab_loc"><a href="[##_localog_link_##]">LOCATION</a></li>
-							<!--<li class="tab_key"><a href="[##_keylog_link_##]">KEYLOG</a></li>-->
-							<li class="tab_guest"><a href="[##_guestbook_link_##]">GUESTBOOK</a></li>					
-						</ul>
-					</div>
-				</div>			
+			<div class="header_wrap">
+				<!--<div class="blogTitle"><a href="[##_blog_link_##]">[##_title_##]</a></div>-->
+			</div>			
 		</div>
 		<!-- header close -->
 
 
 
 		<div id="sidebarL">
+			<!--
 			<b class="ntop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+			-->
 				
 			<div class="side_item">
 
 				<s_sidebar>
+					<!-- 기본 사이드바 -->
+					<s_sidebar_element>
+					<!-- 블로그 로고 모듈 -->
+						<div class="blogImage"><img src="[##_image_##]" alt="블로그 이미지" /></div>						
+					</s_sidebar_element>
+
+					<s_sidebar_element>
+					<!-- 블로그 설명 모듈 -->						
+						<div class="blogDesc">[##_desc_##] <br/><span style="font-family:tahoma">by</span> <strong>[##_blogger_##]</strong></div>
+					</s_sidebar_element>
+
 					<s_sidebar_element>
 					<!-- 카테고리 모듈 -->
 						<div class="category">
@@ -132,8 +144,9 @@
 				</s_sidebar>
 				<div class="sbox_hblank1"></div>
 			</div>
-
-			<b class="nbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>			
+			<!--
+			<b class="nbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+			-->
 			<br /><br />
 		</div>
 		<!-- sidebarL close -->
@@ -146,7 +159,9 @@
 		
 			<!-- 키워드 -->
 			<s_keyword>
-				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b> 	
+				<!--
+				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="keylog">
 					<h3>KEYLOG</h3>
 						<ul>
@@ -158,12 +173,16 @@
 						</ul>
 						<br/>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 			</s_keyword>
 
 			<!-- 글 검색 목록 -->
 			<s_list>
-				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b> 				
+				<!--
+				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="searchList">
 						<h3>BLOG ARTICLE <span class="kw">[##_list_conform_##]</span><span class="count"> | [##_list_count_##] ARTICLE FOUND</span></h3>
 						<ol>
@@ -177,13 +196,17 @@
 						</ol>
 						<br/>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 				<div class="box_hblank1"></div>
 			</s_list>
 			
 			<!-- 댓글 검색 목록 -->
 			<s_rplist>
+				<!--
 				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="searchRplist">
 
 					<h3>COMMENT <span class="kw">[##_rplist_conform_##]</span> <span class="count">| [##_rplist_count_##] COMMENT FOUND</span></h3>
@@ -199,12 +222,16 @@
 					</ol>
 					<br/>				
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 				<div class="box_hblank1"></div>
 			</s_rplist>
 
 			<s_local>
+				<!--
 				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="localog">
 					<h3>LOCATION</h3>
 					<s_local_spot_rep>
@@ -219,11 +246,15 @@
 					</s_local_info_rep>
 					<br/>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 			</s_local>
 
 			<s_tag>
+				<!--
 				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="taglog">
 					<h3>TAG</h3>
 					<ul>
@@ -235,19 +266,27 @@
 					</ul>
 					<br/>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 			</s_tag>
 			
 			<s_media>
+				<!--
 				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="entry">
 					[##_media_content_##]
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 			</s_media>			
 
 			<s_guest>
+				<!--
 				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="guestbook">
 					<h3>GUESTBOOK</h3>
 					<s_guest_input_form>
@@ -300,14 +339,18 @@
 					</s_guest_container>
 					<br/>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 				<div class="box_hblank1"></div>
 				<!-- guestbook close -->
 			</s_guest>
 
 			<!-- NOTICE -->
 			<s_notice_rep>
+				<!--
 				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b> 
+				-->
 				<div class="entryNotice">
 
 					<div class="titleWrap">
@@ -326,14 +369,18 @@
 						<div class="goup" ><a href="#"><img src="./images/subup.gif" alt="" /></a></div>					
 					</div>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 				<div class="box_hblank1"></div>
 			</s_notice_rep>
 
 	
 			<!-- PROTECTED ARTICLE -->
 			<s_article_protected>
-				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b> 	
+				<!--
+				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				<div class="entryProtected">
 					<div class="titleWrap">
 						<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
@@ -347,7 +394,9 @@
 						</div>
 						<div class="box_hblank2"></div>
 				</div>
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 				<div class="box_hblank1"></div>
 			</s_article_protected>
 
@@ -355,8 +404,9 @@
 
 
 
-
-				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b> 
+				<!--
+				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 
 				<div class="entry">	
 
@@ -376,11 +426,15 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 				</div><!-- entry close -->
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b><div class="box_hblank1"></div>
+				-->
 
 			<!-- ARTICLE -->
 			<s_article_rep>
-				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b> 
+				<!--
+				<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 
 				<div class="entry">	
 
@@ -511,7 +565,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 						
 					</s_rp><br/>
 				</div><!-- entry close -->
+				<!--
 				<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b><div class="box_hblank1"></div>
+				-->
 			</s_article_rep>
 
 
@@ -529,8 +585,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 						</div>
 				</s_paging>
 				<div class="copyright">	
-					POWERED BY <a href="http://www.daum.net" onclick="window.open(this.href); return false">DAUM</a> &amp; <a href="http://www.tistory.com" onclick="window.open(this.href); return false">TISTORY</a> | SKIN BY <a href="http://iscubix.com" onclick="window.open(this.href); return false">IENDEV</a> | IS Base 0.33<br />
-					Skin Modified by <a href="http://junho85.pe.kr" target="_blank">junho85</a><br />
+					POWERED BY <a href="http://www.daum.net" onclick="window.open(this.href); return false">DAUM</a> &amp; <a href="http://www.tistory.com" onclick="window.open(this.href); return false">TISTORY</a> | SKIN BY <a href="http://junho85.pe.kr" onclick="window.open(this.href); return false">junho85</a> | IS Base 0.33<br />
 					<a href="[##_guestbook_link_##]">COPYRIGHT ⓒ [##_blogger_##], ALL RIGHTS RESERVED. CONTACT BLOGGER.</a>
 				</div>				
 			</div>
@@ -539,22 +594,13 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		</div><!-- content close -->
 
 		<div id="sidebarR">
+				<!--
 				<b class="ntop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+				-->
 				
 				<div class="side_item" id="side_item">
 				<s_sidebar>
-					<!-- 기본 사이드바 -->
-					<s_sidebar_element>
-					<!-- 블로그 로고 모듈 -->
-						<div class="blogImage"><img src="[##_image_##]" alt="블로그 이미지" /></div>						
-					</s_sidebar_element>
 
-					<s_sidebar_element>
-					<!-- 블로그 설명 모듈 -->						
-						<div class="blogDesc">[##_desc_##] <br/><span style="font-family:tahoma">by</span> <strong>[##_blogger_##]</strong></div>
-
-
-					</s_sidebar_element>
 
 					<s_sidebar_element>
 					<!--애드찜 클릭광고 -->
@@ -707,8 +753,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 					</s_sidebar_element>
 				</s_sidebar><div class="sbox_hblank1"></div>
 				</div>
-				
-				<b class="nbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>			
+				<!--
+				<b class="nbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+				-->
 				<br /><br />
 		</div>
 		<!-- sidebarR close -->		
@@ -727,6 +774,7 @@ pageTracker._trackPageview();
 } catch(err) {}</script>
 
 
+<script src="http://cdn.wibiya.com/Toolbars/dir_0437/Toolbar_437272/Loader_437272.js" type="text/javascript"></script>
 
 <script class="javascript">  
 dp.SyntaxHighlighter.ClipboardSwf = './images/clipboard.swf';     
