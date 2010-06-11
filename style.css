@@ -52,9 +52,9 @@ a:active        { color:#333;     text-decoration:none;}
 hr              { display:none; }
 img             { border:0;}
 h1, h2, h3, h4  { margin:0;  padding:0;}
-h1              { font-size:1.8em;}
-h2              { font-family:dotum,tahoma; font-size:11px; padding-bottom:5px;}
-h3              { font-family:tahoma; font-size:11px; padding-bottom:5px; }
+h1              { font-size:2.2em;}
+h2              { /*font-family:dotum,tahoma;*/ font-size:2.0em; padding-bottom:5px;}
+h3              { /*font-family:tahoma;*/ font-size:1.8em; padding-bottom:5px; }
 h4              { font-size:11px; padding-bottom:5px;}
 input           { border:1px solid #aaa; font-size:11px; }
 textarea        { border:1px solid #aaa; font-size:11px; }
@@ -356,7 +356,14 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 
 .trackback               { clear:both; padding:10px 0px 0px 0px;  width:100%;  overflow:hidden;}
 .taackback ol,ul,li      { margin:0;  padding:0;   }
-.trackback_address       { background:url(images/clip_tb.gif) 10px no-repeat; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#F6F4F0;font:10px/1 tahoma; cursor:pointer; padding:10px 10px 10px 110px; margin:0px;}
+.trackback_address       {
+	background:url(images/clip_tb.gif) 10px no-repeat;
+	border-top:1px solid #ddd; border-bottom:1px solid #ddd;
+	background-color:#F6F4F0;
+	/*font:10px/1 tahoma;*/
+	font-size: 1.2em;
+	cursor:pointer; padding:10px 10px 10px 110px; margin:0px;
+}
 .trackback a             { color:#000;}
 .trackback .from         { font-weight:normal;  padding:0px; margin:0px;}
 .trackback h4            { font-weight:normal;  padding:0px; margin:0px;}
@@ -391,7 +398,7 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 .commentWrite .input_writer		  { float:left; margin-bottom:4px;}
 .commentWrite .input_sec		  { float:right; margin-right:6px; margin-bottom:5px; font:8px tahoma; }
 .commentWrite input               { width:80px; }
-.commentWrite textarea            { font:11px dotum,tahoma; margin-bottom:5px;width:99%;  height:100px;}
+.commentWrite textarea            { font:1.1em Malgun Gothic,맑은 고딕,dotum,tahoma; margin-bottom:5px;width:99%;  height:100px;}
 .commentWrite .homepage           { width:130px;}
 .commentWrite .submit             { border:0px }
 .commentWrite .checkbox           {	border:none; padding:0;	margin:0; width:20px;}
