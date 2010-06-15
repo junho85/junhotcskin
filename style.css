@@ -341,6 +341,10 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 
 .article  ul { margin: 0 0 0 30pt; }
 
+.article h2 {
+	font-size:2em;
+}
+
 .article h1 h2 h3 h4 h5 h6 {
 	border-bottom: 1px solid #CCCCCC;
 }
@@ -378,13 +382,13 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 
 .comment                          { clear:both; padding:10px 0px 5px 0px; line-height:18px; width:100%; overflow:hidden;} 
 .comment_title                    { background:url(images/clip_reply.gif) 10px no-repeat; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#F6F4F0;font:8px tahoma,dotum; padding:10px 10px 10px 110px; }
-.comment p                        { font:11px Malgun Gothic,맑은 고딕,Dotum, Tahoma; line-height:18px; margin:0px; padding:0px; margin-top:10px;margin-bottom:10px;}
+.comment p                        { font:1.2em Malgun Gothic,맑은 고딕,Dotum, Tahoma; line-height:18px; margin:0px; padding:0px; margin-top:10px;margin-bottom:10px;}
 
 .comment h3                       { display:none;}
 .comment ol,
 .comment ul                       { margin:0;  padding:0;  list-style:none;}
 .comment .date                    { font:10px Tahoma;  color:#777;}
-.comment .name                    { font-weight:bold;}
+.comment .name                    { font-size: 1.2em; font-weight:bold;}
 .comment ol li			          { background:url(images/line_dot_gray2.gif) bottom repeat-x; padding:10px 0px 2px 0px;}
 .comment li ul li                 { border:0px; padding:0px 0px 0px 35px;  background:url("images/iconIndentArrow_local.gif") no-repeat 18px 2px;}
 .comment .control a.address       { font-size:14px;background:url(images/iconAddress.gif) 0px 0px no-repeat;  padding-left:38px;  padding-bottom:2px;  text-decoration:none;}
