@@ -337,7 +337,13 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 
 .article dt              { text-decoration:underline;}
 .article dd              { margin-left:20px;  padding-bottom:10px;}
-.article blockquote      { font-size:11px; background:url(images/iconBlockquote.gif) top left no-repeat;  padding-left:35px;  margin-left:5px;}
+.article blockquote {
+/*	font-size:11px;*/
+	background:url(images/iconBlockquote.gif) top left no-repeat;
+	background-color: #eee;
+	padding-left:35px;
+	margin-left:5px;
+}
 
 .article  ul { margin: 0 0 0 30pt; }
 
@@ -370,12 +376,12 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 /*	border-top:1px solid #ddd; border-bottom:1px solid #ddd;*/
 /*	background-color:#F6F4F0;*/
 	/*font:10px/1 tahoma;*/
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: bold;
 	cursor:pointer; padding:10px 10px 10px /*1*/10px; margin:0px;
 }
 .trackback h2 {
-	font-size: 2.5em;
+	font-size: 2.0em;
 	padding-left: 10px;
 }
 .trackback a             { color:#000;}
@@ -401,7 +407,7 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 /*	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 	background-color:#F6F4F0;*/
-	font-size:2.5em/* tahoma,dotum*/;
+	font-size:2.0em/* tahoma,dotum*/;
 	font-weight: bold;
 	padding:10px 10px 10px /*1*/10px;
 }
@@ -417,6 +423,7 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 	font-size:1.2em /*Tahoma*/;
 	color:#777;
 	float: right;
+	padding-right: 10px;
 }
 .comment .name                    { font-size: 1.5em; font-weight:bold;}
 .comment ol li			          { background:url(images/line_dot_gray2.gif) bottom repeat-x; padding:10px 0px 2px 0px;}
