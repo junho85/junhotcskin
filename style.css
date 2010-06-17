@@ -426,7 +426,11 @@ font-size:/*@post-body-font-size=11px*/ /*12px*/1.12em /*@*/; font-family: @post
 	padding-right: 10px;
 }
 .comment .name                    { font-size: 1.5em; font-weight:bold;}
-.comment ol li			          { background:url(images/line_dot_gray2.gif) bottom repeat-x; padding:10px 0px 2px 0px;}
+.comment ol li			          {
+	background:url(/*images/line_dot_gray2.gif) bottom repeat-x;*/
+	padding:10px 0px 2px 0px;
+	border-bottom:2px solid #DDDDDD;
+}
 .comment li ul li                 { border:0px; padding:0px 0px 0px 35px;  background:url("images/iconIndentArrow_local.gif") no-repeat 18px 2px;}
 .comment .control a.address       { font-size:14px;background:url(images/iconAddress.gif) 0px 0px no-repeat;  padding-left:38px;  padding-bottom:2px;  text-decoration:none;}
 .comment .control a.address span  { display:none;}
