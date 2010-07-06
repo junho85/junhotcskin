@@ -190,7 +190,7 @@ body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; 
 	width:/*@post-width:200=*/ 1190px/*970px*/ /*@*/;
 	border:0px solid #777777;
 	margin:0px auto; 
-	padding:0px;  		
+	padding:0px;
 }
 
 #content {
@@ -201,6 +201,13 @@ body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; 
 	background-color: white;
 
 	overflow:hidden;
+
+    background-color: rgba(255, 255, 255, 0.85);
+<!--[if lte IE 8]>
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
+<![endif]-->
+
 }
 
 
