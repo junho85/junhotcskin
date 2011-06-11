@@ -105,7 +105,9 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	font: "Malgun Gothic bold","맑은 고딕 bold";
 	font-size: 1.3em;
 	font-weight: bold;
-	margin:0 8pt;
+	/*margin:0 8pt;*/
+	margin: auto;
+	width: 1200px;
 	padding:8px 0 5px 9px;
 	display:block;
 	height: 22px;
@@ -116,6 +118,14 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	color:#ffffff;
 }
 
+/* 로고 밑에 바 */
+#headbar .bar {
+	position: relative;
+	width: 1200px;
+	margin: auto;
+}
+
+/* 내 사이트 목록 */
 #headbar .sites {
 	float: left;
 	font-size: 0.9em;
@@ -132,6 +142,17 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	background: transparent;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF); 
 <![endif]-->
+}
+
+
+/* 구글 검색 */
+#headbar .googleSearch {
+	float: right;
+	font-size: 0.9em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 30px;
+	color: black;
 }
 
 #headbar .blogMenu      {

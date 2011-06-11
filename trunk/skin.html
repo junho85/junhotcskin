@@ -20,19 +20,19 @@
 <link type="text/css" rel="stylesheet" href="./images/SyntaxHighlighter.css"></link>
 <title>[##_title_##] :: [##_page_title_##]</title>
 
-<script class="javascript" src="./images/shCore.js"></script>  
-<script class="javascript" src="./images/shBrushCSharp.js"></script>  
-<script class="javascript" src="./images/shBrushCpp.js"></script>  
-<script class="javascript" src="./images/shBrushCss.js"></script>  
-<script class="javascript" src="./images/shBrushDelphi.js"></script>  
-<script class="javascript" src="./images/shBrushJScript.js"></script>  
-<script class="javascript" src="./images/shBrushJava.js"></script>  
-<script class="javascript" src="./images/shBrushPhp.js"></script>  
-<script class="javascript" src="./images/shBrushPython.js"></script>  
-<script class="javascript" src="./images/shBrushRuby.js"></script>  
-<script class="javascript" src="./images/shBrushSql.js"></script>  
-<script class="javascript" src="./images/shBrushVb.js"></script>  
-<script class="javascript" src="./images/shBrushXml.js"></script>  
+<script type="javascript" src="./images/shCore.js"></script>  
+<script type="javascript" src="./images/shBrushCSharp.js"></script>  
+<script type="javascript" src="./images/shBrushCpp.js"></script>  
+<script type="javascript" src="./images/shBrushCss.js"></script>  
+<script type="javascript" src="./images/shBrushDelphi.js"></script>  
+<script type="javascript" src="./images/shBrushJScript.js"></script>  
+<script type="javascript" src="./images/shBrushJava.js"></script>  
+<script type="javascript" src="./images/shBrushPhp.js"></script>  
+<script type="javascript" src="./images/shBrushPython.js"></script>  
+<script type="javascript" src="./images/shBrushRuby.js"></script>  
+<script type="javascript" src="./images/shBrushSql.js"></script>  
+<script type="javascript" src="./images/shBrushVb.js"></script>  
+<script type="javascript" src="./images/shBrushXml.js"></script>  
 
 <script language="javascript" type="text/javascript"  src="./images/is_base.js"></script> 
 <script language="javascript" type="text/javascript" >	
@@ -61,47 +61,54 @@
 </head>
 
 <body id="[##_body_id_##]" onload="init_side_detail();expandTree();">
+
 <a name="top"></a>
 <s_t3>
 
 	<!-- div header -->
 	<div id="headbar">
-		<div class=logo><a href="[##_blog_link_##]">[##_title_##]</a></div>
+		<div class=logo>
+			<div style="float:left">
+				<a href="[##_blog_link_##]">[##_title_##]</a>
+			</div>
 
-		<div class="sites">
-			<!-- 
-			<a href="http://junho85.dlinkddns.com:8080" target="_blank">JunHo's Laboratory</a> /
-			 -->
-			<a href="http://www.facebook.com/junho85" target="_blank">Facebook</a> /
-			<a href="http://twitter.com/junho85" target="_blank">Twitter</a> /
-			<a href="http://me2day.net/junho85" target="_blank">Me2day</a> /
-		</div>
-
-		<div style="position: absolute; left:980px; top:0px;">
-			<!-- Google Search Module -->
-			<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
-			  <div>
-				<input type="hidden" name="cx" value="partner-pub-8756229796915320:pwbw5xvew2x" />
-				<input type="hidden" name="ie" value="UTF-8" />
-				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="&#xac80;&#xc0c9;" />
-			  </div>
-			</form>
-			<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=ko"></script> 
+			<div class="googleSearch">
+				<!-- Google Search Module -->
+				<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+				  <div>
+					<input type="hidden" name="cx" value="partner-pub-8756229796915320:pwbw5xvew2x" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="text" name="q" size="31" />
+					<input type="submit" name="sa" value="&#xac80;&#xc0c9;" />
+				  </div>
+				</form>
+				<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=ko"></script> 
+			</div>
 		</div>
 
 		<div class="blogMenu">
-			<ul>
-				<!-- 블로그 사용 환경 (설치형/티스토리)에 맞게 아래 주석으로 처리된 메뉴를 활성화 시키시기 바랍니다. -->
-				<li class="tab_blog"><a href="[##_blog_link_##]">BLOG</a></li>
-				<li class="tab_tag"><a href="[##_taglog_link_##]">TAG</a></li>	
-				<li class="tab_media"><a href="[##_blog_link_##]media">MEDIA</a></li>
-				<li class="tab_loc"><a href="[##_localog_link_##]">LOCATION</a></li>
-				<!--<li class="tab_key"><a href="[##_keylog_link_##]">KEYLOG</a></li>-->
-				<li class="tab_guest"><a href="[##_guestbook_link_##]">GUESTBOOK</a></li>					
-			</ul>
+			<div class="bar">
+				<div class="sites">
+					<!-- 
+					<a href="http://junho85.dlinkddns.com:8080" target="_blank">JunHo's Laboratory</a> /
+					 -->
+					<a href="http://www.facebook.com/junho85" target="_blank">Facebook</a> /
+					<a href="http://twitter.com/junho85" target="_blank">Twitter</a> /
+					<a href="http://me2day.net/junho85" target="_blank">Me2day</a> /
+				</div>
+				
+				<ul>
+					<!-- 블로그 사용 환경 (설치형/티스토리)에 맞게 아래 주석으로 처리된 메뉴를 활성화 시키시기 바랍니다. -->
+					<li class="tab_blog"><a href="[##_blog_link_##]">BLOG</a></li>
+					<li class="tab_tag"><a href="[##_taglog_link_##]">TAG</a></li>	
+					<li class="tab_media"><a href="[##_blog_link_##]media">MEDIA</a></li>
+					<li class="tab_loc"><a href="[##_localog_link_##]">LOCATION</a></li>
+					<!--<li class="tab_key"><a href="[##_keylog_link_##]">KEYLOG</a></li>-->
+					<li class="tab_guest"><a href="[##_guestbook_link_##]">GUESTBOOK</a></li>					
+				</ul>
+			</div>
 		</div>
-
+		
 
 	</div>
 
@@ -546,7 +553,41 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		</div><!-- content close -->
 
 		<div id="sidebarR">
-				
+			<div>
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 4,
+				  interval: 6000,
+				  width: 200,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#333333',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#000000',
+				      color: '#ffffff',
+				      links: '#4aed05'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: true,
+				    live: true,
+				//    live: false,
+				    hashtags: true,
+				    timestamp: true,
+				    avatars: true,
+				    behavior: 'all'
+				  }
+				}).render().setUser('junho85').start();
+				</script>
+			</div>		
+					
 				<div class="side_item" id="side_item">
 				<s_sidebar>
 
