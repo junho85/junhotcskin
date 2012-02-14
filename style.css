@@ -100,7 +100,7 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 
 #headbar .logo {
 	position: relative;
-	left:10px;
+	left:5px;
 	top:0px;
 	font: "Malgun Gothic bold","맑은 고딕 bold";
 	font-size: 1.3em;
@@ -118,19 +118,15 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	color:#ffffff;
 }
 
+#headbar .logo .title {
+	float: left;
+}
+
 /* 로고 밑에 바 */
 #headbar .bar {
 	position: relative;
 	width: 1200px;
 	margin: auto;
-}
-
-/* 내 사이트 목록 */
-#headbar .sites {
-	float: left;
-	font-size: 0.9em;
-	margin-left: 30px;
-	color: black;
 }
 
 #header .sitesbackup {
@@ -149,10 +145,26 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 #headbar .googleSearch {
 	float: right;
 	font-size: 0.9em;
-	margin-top: 0px;
+	margin-top: -5px;
 	padding-top: 0px;
 	margin-left: 30px;
 	color: black;
+}
+
+/* 내 사이트 목록 */
+#headbar .mySiteMenu {
+	float: left;
+}
+#headbar .mySiteMenu ul {
+	margin:0;
+	font-size: 0.9em;
+	margin-left: 20px;
+	color: black;
+	list-style:none;
+}
+
+#headbar .mySiteMenu li {
+	display: inline;
 }
 
 #headbar .blogMenu      {
@@ -162,8 +174,8 @@ textarea        { border:1px solid #aaa; font-size:11px; }
 	display:block
 }
 
-#headbar .blogMenu ul   { margin:0;  padding-bottom:7px;  list-style:none;}
-#headbar .blogMenu li   { padding-bottom:3px; display:inline;  background:url(images/bullBar.gif) no-repeat;  margin-left:3px;  padding-left:7px;}
+#headbar .blogMenu ul { margin:0;  padding-bottom:7px;  list-style:none;}
+#headbar .blogMenu li { padding-bottom:3px; display:inline;  background:url(images/bullBar.gif) no-repeat;  margin-left:3px;  padding-left:7px;}
 #headbar .blogMenu li a { color:#000000; font:11px tahoma; }
 
 body#tt-body-blog #headbar .blogMenu li.tab_blog a ,
@@ -240,7 +252,7 @@ body#tt-body-media #content { background:url(images/bg_mcontent.gif) no-repeat; 
 .box_hblank2 { padding:10px; }
 
 /* ***** Tool   ***** */
-#tool .admin_button   { text-align:right; float: right; padding: 5px 5px 0px 0px; clear:both; margin:0px;}
+#tool .admin_button   { text-align:right; float: right; padding: 0px 5px 5px 0px; clear:both; margin:0px;}
 
 /* ***** title_wrap **** */
 .titleWrap a              { margin-bottom: 12px; /*@post-title-color=color:;*/ color: ; /*@*/ /*@post-title-font-family=font-family:;*/ font-family: inherit; /*@*/ /*@post-title-font-size=font-size:;*/ font-size: inherit; /*@*/} 
