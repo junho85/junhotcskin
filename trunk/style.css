@@ -21,7 +21,9 @@ a:active        { color:#333;     text-decoration:none;}
 
 /* 종류별 코멘트 [##_rp_rep_class_##] */
     .rp_general             { }
+    .rp_general span img    { border-radius: 100% }
     .rp_admin               { }
+    .rp_admin span img      { border-radius: 100% }
     .rp_secret              { color:#f30; }
 /* 종류별 코멘트 [##_guest_rep_class_##] */
     .guest_general          {  }
